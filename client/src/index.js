@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CommentBox from './components/CommentBox'
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  <CommentBox 
+  url={commentsUrl}
+  pollInterval={2000} />,
   document.getElementById('root')
 );
 

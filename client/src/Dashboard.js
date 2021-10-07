@@ -48,7 +48,8 @@ export default function Dashboard({ code }) {
     if (!accessToken) return
 
     let cancel = false
-    spotifyApi.searchTracks(search).then(res => {
+    spotifyApi.searchTracks(search)
+    .then(res => {
       if (cancel) return
       setSearchResults(
         res.body.tracks.items.map(track => {
@@ -97,6 +98,9 @@ export default function Dashboard({ code }) {
       </div>
       <div>
          <Player accessToken={accessToken} trackUri={playingTrack?.uri} /> 
+      </div>
+      <div>
+          <CommentBox />
       </div>
     </Container>
   )
