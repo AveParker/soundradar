@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.post('/refresh', (req, res) => {
   const refreshToken = req.body.refreshToken
   const spotifyApi = new SpotifyWebApi({
-    redirectUri: 'http://localhost:3000',
+    redirectUri: 'https://soundradar.herokuapp.com/',
     clientId: '6bf879ed4da54d7f8ba7511074c72f00',
     clientSecret: 'ac03c02e869e4b49a61c0041d99fbe0e',
     refreshToken
