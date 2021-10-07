@@ -12,6 +12,7 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "lyrics-finder": "^21.7.0",
     "mongoose": "^6.0.8",
     "morgan": "^1.10.0",
     "react-spotify-web-playback": "^0.8.2",
