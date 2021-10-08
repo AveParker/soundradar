@@ -27,7 +27,7 @@ export default function Dashboard({ code }) {
     if (!playingTrack) return
 
     axios
-      .get("https://soundradar.herokuapp.com/lyrics", {
+      .get("http://localhost:3000/lyrics", {
         params: {
           track: playingTrack.title,
           artist: playingTrack.artist,
